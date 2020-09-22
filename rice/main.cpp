@@ -9,10 +9,10 @@ using std::cout;
 using std::endl;
 
 int main(){
-int square[1000] = {1};
+int square[1000] = {1}; //The base that the rest of it is based on
 int count = 1;
 
-    for(count; square[count] <= 1000; count++)
+    for(count=1; square[count] <= 1000; count++)//also works with just count instead of count=1
     square[count] = square[count-1]*2;
     cout<< "It would take " <<count <<" squares to reach 1000 grains\n";
 
