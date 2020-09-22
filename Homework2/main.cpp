@@ -32,7 +32,7 @@ void InputNames(vector<string> & names){
 bool DoesNameExist(const string & nameToFind, const vector<string> & names)
 {
 
-    if (find(names.begin(), names.end(), nameToFind) != names.end())
+    if (find(names.begin(), names.end(), nameToFind) != names.end()) // Looks at the input of the user
     {
         cout << "The name " << nameToFind << " exists in the list.\n" << endl; // using algorithim from the include
         return true;
@@ -46,11 +46,12 @@ bool DoesNameExist(const string & nameToFind, const vector<string> & names)
 
 void PrintNames(const vector<string> & names)
 {
-cout << "Here is your list of names:\n";
-for (int i = 0; i < names.size(); i++)
-{
-cout << names.at(i) << endl;
-}
+    cout << "Here is your list of names:\n";
+
+    for (int i = 0; i < names.size(); i++)
+    {
+    cout << names.at(i) << endl;
+    }
 
 
 }
@@ -59,7 +60,7 @@ void PrintNamesBack(const vector<string> & names){
     cout<<"This is your list, with each name inverted:\n";
     for(int i = 0; i < names.size(); i++){
         string rvs = names.at(i);
-        for (int k = rvs.length() - 1; k >= 0; k--)
+        for (int k = rvs.length() - 1; k >= 0; k--) //reverses the names inputted
         {
             cout << rvs[k];
         }
@@ -71,7 +72,7 @@ void PrintNamesBack(const vector<string> & names){
 
 
 int main() {
-    string name = "John Doe";
+    string name = "John Doe";// string name needs to come before
     vector<string> names;
 
     InputNames(names);
