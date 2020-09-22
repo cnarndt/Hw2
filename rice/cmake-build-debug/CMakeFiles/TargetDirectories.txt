@@ -1,0 +1,3 @@
+C:/Users/Clayton/CLionProjects/rice/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Clayton/CLionProjects/rice/cmake-build-debug/CMakeFiles/rice.dir
+C:/Users/Clayton/CLionProjects/rice/cmake-build-debug/CMakeFiles/rebuild_cache.dir
